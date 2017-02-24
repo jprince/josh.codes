@@ -1,0 +1,16 @@
+AllCops:
+  Exclude:
+    - db/schema.rb
+    - tmp/**/*
+    - config.ru
+  TargetRubyVersion: 2.4
+
+Documentation:
+  Enabled: false
+
+LineLength:
+  Max: 99
+  Exclude:
+    - config/environments/*
+    - config/initializers/backtrace_silencers.rb
+    - db/seeds.rb
