@@ -11,7 +11,7 @@ if Rails.env.test? || Rails.env.development?
   RuboCop::RakeTask.new
 end
 
-task checks: [:rubocop]
+task checks: [:rubocop, :whitespace]
 
 task(:default).clear
 task default: [:checks, :spec]
