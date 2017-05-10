@@ -1,7 +1,23 @@
 # README
 
 ## Getting started
-TODO
+Install nvm if it's not already installed:
+```sh
+brew install nvm
+```
+
+Install v6.9.5 of nodejs:
+```sh
+nvm install 6.9.5
+```
+
+Use that version and start your server:
+```sh
+nvm use
+./bin/server
+```
+
+That's it! The application is running on localhost:5000
 
 ## Configuring AWS elastic beanstalk
 Before creating the elastic beanstalk instance, make sure that you've created an IAM user for the application, with only the necessary permissions. Generate access keys for that user and keep them handy, since you'll need them to create the instance.

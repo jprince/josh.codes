@@ -15,3 +15,8 @@ LineLength:
     - config/environments/*
     - config/initializers/backtrace_silencers.rb
     - db/seeds.rb
+
+YAMLLoad:
+  Exclude:
+    - bin/webpack
+    - bin/webpack-dev-server
