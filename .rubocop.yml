@@ -1,8 +1,9 @@
 AllCops:
   Exclude:
-    - db/schema.rb
-    - tmp/**/*
     - config.ru
+    - db/schema.rb
+    - node_modules/**/*
+    - tmp/**/*
   TargetRubyVersion: 2.4
 
 Documentation:

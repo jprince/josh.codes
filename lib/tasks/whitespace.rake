@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 task :whitespace do
   puts 'Checking for whitespace errors'
   file_glob = '{app,bin,config,db,doc,lib,spec}/**/*'
