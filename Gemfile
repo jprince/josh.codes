@@ -24,6 +24,7 @@ group :development, :test do
   gem 'foreman'
   gem 'rspec-rails', '~> 3.5'
   gem 'rubocop'
+  gem 'scss_lint', require: false
   gem 'selenium-webdriver'
 end
 

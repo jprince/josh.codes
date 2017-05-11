@@ -9,10 +9,12 @@ Rails.application.load_tasks
 
 if Rails.env.test? || Rails.env.development?
   require 'rubocop/rake_task'
+  require 'scss_lint/rake_task'
   RuboCop::RakeTask.new
+  SCSSLint::RakeTask.new
 end
 
-task checks: %i[rubocop whitespace]
+task checks: %i[rubocop scss_lint whitespace]
 
 task(:default).clear
 task default: %i[checks spec]
