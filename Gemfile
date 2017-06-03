@@ -10,6 +10,7 @@ end
 
 gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
+gem 'paperclip', '~> 5.0.0'
 gem 'pg'
 gem 'puma', '~> 3.7'
 gem 'rails', '~> 5.1.0'
@@ -22,6 +23,7 @@ group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'capybara', '~> 2.7.0'
   gem 'foreman'
+  gem 'pry'
   gem 'rspec-rails', '~> 3.5'
   gem 'rubocop'
   gem 'scss_lint', require: false

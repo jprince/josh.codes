@@ -28,4 +28,5 @@
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
 /public/packs
+/public/system/photos
 /node_modules

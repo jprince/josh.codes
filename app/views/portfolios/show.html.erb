@@ -1,0 +1,69 @@
+<%= javascript_include_tag "portfolio" %>
+
+<div class="container center-align">
+  <h3>Portfolio</h3>
+
+  <div class="row">
+    <div class="carousel carousel-slider">
+      <% @projects.each do |project| %>
+        <a class="carousel-item">
+          <%= image_tag project.photos.first.asset.url %>
+        </a>
+      <% end %>
+    </div>
+  </div>
+  <div class="carousel-navigation">
+    <i class="material-icons icon-grey previous-icon">navigate_before</i>
+    <i class="material-icons icon-grey next-icon">navigate_next</i>
+  </div>
+
+  <div class="row">
+    <% @projects.each do |project| %>
+      <div class="project-details <%= "#{project[:name].delete('\'').downcase.gsub(' ', '-')}" %>">
+        <div class="row project-description">
+          <ul class="collapsible left-align" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons icon-red">error</i>
+                Problem
+              </div>
+              <div class="collapsible-body">
+                <span><%= project[:problem] %></span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons icon-green">lightbulb_outline</i>
+                Solution
+              </div>
+              <div class="collapsible-body">
+                <span><%= project[:solution] %></span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons icon-grey">desktop_mac</i>
+                Technology
+              </div>
+              <div class="collapsible-body">
+                <span><%= project[:technology] %></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="row gallery">
+          <% project.photos.each do |photo| %>
+            <div class="col s6">
+              <div class="card valign-wrapper">
+                <div class="card-image">
+                  <%= image_tag photo.asset.url, class: "materialboxed" %>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

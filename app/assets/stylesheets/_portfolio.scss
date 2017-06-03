@@ -1,0 +1,50 @@
+@import 'variables';
+
+.carousel {
+  height: 600px !important; // scss-lint:disable ImportantRule
+
+  .indicators {
+    right: 10px;
+    text-align: right;
+
+    .indicator-item {
+      background-color: $green;
+      height: 12px;
+      margin: 20px 10px 10px;
+      opacity: 0.5;
+      width: 12px;
+
+      // scss-lint:disable NestingDepth
+      &.active {
+        background-color: $green;
+        opacity: 1;
+      }
+      // scss-lint:enable NestingDepth
+    }
+  }
+}
+
+.carousel-navigation {
+  i {
+    cursor: pointer;
+    font-size: 80px;
+    position: absolute;
+    top: 440px;
+
+    &.previous-icon { left: 8%; }
+    &.next-icon { right: 8%; }
+  }
+}
+
+.collapsible-header.active { font-weight: 700; }
+.gallery .card { box-shadow: none; }
+.material-icons.icon-green { color: $icon-green; }
+.material-icons.icon-grey { color: $icon-grey; }
+.material-icons.icon-red { color: $icon-red; }
+.project-details { margin-top: 50px; }
+
+// Optimize gallery card heights for each project
+.arcadia-analytics .gallery .card { height: 480px; }
+.kanburn .gallery .card { height: 380px; }
+.sleepers-and-keepers .gallery .card { height: 330px; }
+.kings-corner-barbershop .gallery .card { height: 370px; }

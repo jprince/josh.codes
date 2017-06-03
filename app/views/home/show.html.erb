@@ -1,9 +1,11 @@
+<%= javascript_include_tag "home" %>
+
 <div class="container center-align">
   <div class="row">
     <h1>I &nbsp; solve &nbsp; problems</h1>
   </div>
   <div class="row">
-    <h3>My solutions emphasize:</h3>
+    <h3>with an emphasis on:</h3>
     <h5>
       <div class="col s4">
         <div class="card grey lighten-5">
@@ -25,10 +27,19 @@
       </div>
     </h5>
   </div>
-  <div class="row">
-    <div class="col s12">Portfolio link</div>
+  <div class="row portfolio">
+    <div class="col s12">
+      <h4>Portfolio</h4>
+    </div>
+    <div class="col s12">
+      <a href="/portfolio" class="row valign-wrapper">
+        <%= image_tag 'portfolio/arcadia-analytics-home.png', class: "col s4" %>
+        <%= image_tag 'portfolio/kanburn-loading.gif', class: "col s4"  %>
+        <%= image_tag 'portfolio/kings-corner-entry.png', class: "col s4"  %>
+      </a>
+    </div>
   </div>
-  <div class="row">
+  <div class="row professional-experience">
     <div class="col s12">
       <h4>Professional Experience</h4>
     </div>
@@ -104,7 +115,7 @@
       </div>
     </div>
   </div>
-  <div class="row">
+  <div class="row education">
     <div class="col s12">
       <h4>Education</h4>
     </div>
@@ -126,7 +137,7 @@
       </div>
     </div>
   </div>
-  <div class="row">
+  <div class="row technical-skills">
     <div class="col s12">
       <h4>Technical Skills</h4>
     </div>
@@ -146,7 +157,7 @@
                   SQL<br>
                   HTML<br>
                   CSS<br>
-                  Elixr*
+                  Elixir*
                 </p>
               </div>
               <div class="col s4">
