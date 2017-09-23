@@ -8,7 +8,7 @@
     text-align: right;
 
     .indicator-item {
-      background-color: $green;
+      background-color: $orange;
       height: 12px;
       margin: 20px 10px 10px;
       opacity: 0.5;
@@ -16,7 +16,7 @@
 
       // scss-lint:disable NestingDepth
       &.active {
-        background-color: $green;
+        background-color: $orange-dark;
         opacity: 1;
       }
       // scss-lint:enable NestingDepth
@@ -26,11 +26,13 @@
 
 .carousel-navigation {
   i {
+    color: $orange;
     cursor: pointer;
     font-size: 80px;
     position: absolute;
     top: 440px;
 
+    &:hover { color: $orange-dark; }
     &.previous-icon { left: 8%; }
     &.next-icon { right: 8%; }
   }
