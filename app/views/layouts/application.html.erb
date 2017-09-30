@@ -8,6 +8,8 @@
 
     <%= stylesheet_pack_tag    'materializecss' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag    'application' %>
+    <%= javascript_pack_tag    'lodash' %>
     <%= javascript_pack_tag    'materializecss' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <meta name="turbolinks-cache-control" content="no-preview">
@@ -16,6 +18,7 @@
   <body>
     <%= render 'shared/header' %>
     <%= yield %>
+    <%= render 'shared/contact' %>
     <%= render 'shared/footer' %>
   </body>
 </html>

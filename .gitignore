@@ -30,3 +30,6 @@
 /public/packs
 /public/system/photos
 /node_modules
+
+# Ignore encrypted secrets key file.
+config/secrets.yml.key

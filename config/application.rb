@@ -10,8 +10,16 @@ Bundler.require(*Rails.groups)
 
 module JprinceCodes
   class Application < Rails::Application
-    # Settings in config/environments/* take precedence over those specified here.
-    # Application configuration should go into files in config/initializers
-    # -- all .rb files in that directory are automatically loaded.
+    config.action_mailer.perform_deliveries = true
+    config.action_mailer.perform_caching = false
+    config.action_mailer.delivery_method = :smtp
+    config.action_mailer.smtp_settings = {
+      address: 'email-smtp.us-east-1.amazonaws.com',
+      port: 587,
+      user_name: Rails.application.secrets.smtp_user,
+      password: Rails.application.secrets.smtp_password,
+      authentication: :login,
+      enable_starttls_auto: true
+    }
   end
 end

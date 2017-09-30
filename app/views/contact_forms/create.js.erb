@@ -1,0 +1,21 @@
+var clearContactForm;
+var setFlash;
+
+clearContactForm = function() {
+  $('#contact #email').val('');
+  $('#contact #full_name').val('');
+  $('#contact #message').val('');
+  $("#contact input[type='submit']").prop('disabled', true);
+}
+
+setFlash = function(message) {
+  return Materialize.toast(message, 4000);
+}
+
+if ("<%= @status %>" === 'success') {
+  $('#contact').modal('close');
+  clearContactForm();
+  setFlash('Thanks for reaching out! I\'ll be in touch shortly.');
+} else {
+  setFlash('Uh oh, something went wrong. Please double-check your form inputs and try again.');
+}
