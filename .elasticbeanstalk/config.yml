@@ -1,0 +1,19 @@
+branch-defaults:
+  jp-contact:
+    environment: production
+  master:
+    environment: production
+    group_suffix: null
+environment-defaults:
+  production:
+    branch: null
+    repository: null
+global:
+  application_name: jprince.codes
+  branch: null
+  default_ec2_keyname: aws-eb
+  default_platform: Ruby 2.3 (Puma)
+  default_region: us-east-1
+  profile: eb-cli
+  repository: null
+  sc: git

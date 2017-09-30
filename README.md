@@ -36,5 +36,8 @@ Run:
 
 I found that I needed to explicitly assign environment variables in database.yml for the initial deploy, otherwise it failed because it couldn't connect to the postgres instance. After the initial deploy I was able to modify database.yml to once again use Rails secrets for those values.
 
+You might also need to set ENV variables in elastic beanstalk (configuration -> software configuration) - particularly the
+RAILS_MASTER_KEY.
+
 ## Deploying the application
-`$ eb deploy`
+`$ eb deploy production`
