@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  // Project Carousel
   $('.carousel.carousel-slider').carousel({
     fullWidth: true,
     indicators: true,
@@ -17,5 +18,15 @@ $(document).ready(function(){
   });
   $('.next-icon').click(function() {
     $('.carousel').carousel('next');
+  });
+
+  // Project Details
+  $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+
+  // Project Gallery
+  $(document).ready(function(){
+    $('.materialboxed').materialbox();
   });
 });
