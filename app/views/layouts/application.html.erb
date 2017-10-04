@@ -12,6 +12,14 @@
     <%= javascript_pack_tag    'lodash' %>
     <%= javascript_pack_tag    'materializecss' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107487939-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-107487939-1');
+    </script>
     <meta name="turbolinks-cache-control" content="no-preview">
   </head>
 
