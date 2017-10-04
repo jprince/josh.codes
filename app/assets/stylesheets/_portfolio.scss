@@ -1,7 +1,7 @@
 @import 'variables';
 
 .carousel {
-  height: 600px !important; // scss-lint:disable ImportantRule
+  height: 594px !important; // scss-lint:disable ImportantRule
 
   .indicators {
     right: 10px;
@@ -43,10 +43,15 @@
 .material-icons.icon-green { color: $icon-green; }
 .material-icons.icon-grey { color: $icon-grey; }
 .material-icons.icon-red { color: $icon-red; }
-.project-details { margin-top: 50px; }
+.project-details {
+  margin-top: 40px;
+
+  h3 { font-size: 2.3em; }
+}
 
 // Optimize gallery card heights for each project
 .arcadia-analytics .gallery .card { height: 480px; }
 .kanburn .gallery .card { height: 380px; }
-.sleepers-and-keepers .gallery .card { height: 330px; }
 .kings-corner-barbershop .gallery .card { height: 370px; }
+.my-wedding-website .gallery .card { height: 335px; }
+.sleepers-and-keepers .gallery .card { height: 330px; }

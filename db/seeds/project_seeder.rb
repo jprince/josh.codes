@@ -40,7 +40,7 @@ class ProjectSeeder
           },
           {
             name: 'Kanburn',
-            problem: 'Despite using an agile software development methodology for planning an executing on releases, I was often asked by stakeholders (product managers, implementation teams, account managers, etc.) to provide an estimate as to when a particular release will be completed. Determining this was done manually and often had to be recalculated several times throughout a release.',
+            problem: 'Despite using an agile software development methodology for planning and executing releases, I was often asked by stakeholders (product managers, implementation teams, account managers, etc.) to provide an estimate as to when a particular release would be completed. Determining this was done manually and often had to be recalculated several times throughout a release.',
             solution: 'Kanburn provides a burndown for projects that utilize a Kanban or continuous flow planning process. It takes inputs for team size, velocity, and PTO and uses them, along with estimates on open tickets pulled from the JIRA API, to provide a real-time estimate of the release\'s completion date. Though this was developed as a side-project it was adopted by all three of Arcadia\'s development teams',
             technology: 'Meteor',
             photos_attributes: [
@@ -70,7 +70,7 @@ class ProjectSeeder
           {
             name: 'King\'s Corner Barbershop',
             problem: 'When my brother decided to open his own high-end barbershop he approached me for help with his branding and website. His requirements were something that reflects the hip character of the shop and allows him to make frequent updates.',
-            solution: 'With the requirement that he be able to make edits to his website (for barber profiles and gallery photos) I knew that a CMS a better choice than something written from scratch. Wix provided us with nice template options without restricting our ability to customize it for his shop. He\'s since opened a second location and the CMS made it an easy job to extend the website accordingly.',
+            solution: 'With the requirement that he be able to make edits to his website (for barber profiles and gallery photos) I knew that a CMS would be a better choice than something written from scratch. Wix provided us with nice template options without restricting our ability to customize it for his shop. He\'s since opened a second location and the CMS made it easy to extend the website accordingly.',
             technology: 'Wix.com CMS',
             photos_attributes: [
               photo_attributes_for_file('kings-corner-splash.png'),
@@ -80,6 +80,18 @@ class ProjectSeeder
               photo_attributes_for_file('kings-corner-gallery.png'),
               photo_attributes_for_file('kings-corner-contact.png'),
               photo_attributes_for_file('kings-corner-map.png')
+            ]
+          },
+          {
+            name: 'My Wedding Website',
+            problem: 'My fiancé and I wanted a simple wedding website that would allow us to share important logistical details with our guests prior to sending out invitations.',
+            solution: 'Given the straightforwardness of our requirements, and the desire to be able to get something stood up with minimal effort, I decided that working off of a CMS template made more sense than building something from scratch. Ultimately that meant that the majority of the effort was design-related, which I had a lot of fun with.',
+            technology: 'Squarespace.com CMS',
+            photos_attributes: [
+              photo_attributes_for_file('wedding-home.png'),
+              photo_attributes_for_file('wedding-schedule.png'),
+              photo_attributes_for_file('wedding-accommodations.png'),
+              photo_attributes_for_file('wedding-registry.png')
             ]
           }
         ]

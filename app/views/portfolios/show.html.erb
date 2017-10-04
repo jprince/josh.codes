@@ -20,6 +20,9 @@
   <div class="row">
     <% @projects.each do |project| %>
       <div class="project-details <%= "#{project[:name].delete('\'').downcase.gsub(' ', '-')}" %>">
+        <div class="row">
+          <h3 class="row project-name"><%= project[:name] %></h3>
+        </div>
         <div class="row project-description">
           <ul class="collapsible left-align" data-collapsible="accordion">
             <li>

@@ -2,6 +2,6 @@
 
 class PortfoliosController < ApplicationController
   def show
-    @projects = Project.all
+    @projects = Project.all.order(:id)
   end
 end
