@@ -3,6 +3,7 @@
 .btn-floating {
   background-color: $orange;
 
+  &:focus,
   &:hover { background-color: $orange-dark; }
 }
 
