@@ -20,6 +20,7 @@ a { color: $grey-light; }
 
 body {
   background-image: asset-url('brillant.png');
+  color: $grey-darker;
   font-family: $default-font;
 }
 
@@ -68,7 +69,7 @@ h2 a {
 
 h3,
 h3 a {
-  color: $purple;
+  color: $purple-light;
   font-size: 2.5rem;
   font-weight: 500;
   letter-spacing: 0.8px;
@@ -99,3 +100,5 @@ h4 a {
     margin-bottom: 1rem;
   }
 }
+
+.modal-footer .btn-flat { color: $grey-darker; }
