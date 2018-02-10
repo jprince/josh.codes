@@ -18,7 +18,7 @@ nvm use
 
 Install dependencies:
 ```sh
-npm install
+yarn install
 ```
 
 Start your server:
@@ -27,6 +27,12 @@ gatsby develop
 ```
 
 That's it! The application is running on localhost:8000
+
+## Running tests
+To lint scss:
+```sh
+yarn run stylelint
+```
 
 ## Deploying to production
 Prepare an optimized production build:
