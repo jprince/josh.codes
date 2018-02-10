@@ -8,10 +8,17 @@ import './index.scss'
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Gatsby Default Starter"
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+      title="Josh Prince | Design & Development"
+      link={[
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Raleway:400,500,600,700|Montserrat:300' },
+      ]}
+      script={[
+        { aync: true, src: 'https://www.googletagmanager.com/gtag/js?id=UA-107487939-1' },
+        {
+          type: 'text/javascript',
+          innerHTML: 'window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag(\'js\', new Date());gtag(\'config\', \'UA-107487939-1\');'
+        }
       ]}
     />
     <Header />
