@@ -1,13 +1,40 @@
-# gatsby-starter-default
-The default Gatsby starter
+# README
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
-
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-example-site
+## Getting started
+Install nvm if it's not already installed:
+```sh
+brew install nvm
 ```
 
-## Deploy
+Install v8.9.3 of nodejs:
+```sh
+nvm install 8.9.3
+```
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+Use that version:
+```sh
+nvm use
+```
+
+Install dependencies:
+```sh
+npm install
+```
+
+Start your server:
+```sh
+gatsby develop
+```
+
+That's it! The application is running on localhost:8000
+
+## Deploying to production
+Prepare an optimized production build:
+```sh
+gatsby build
+```
+
+Test the production build locally:
+```sh
+gatsby serve
+```
