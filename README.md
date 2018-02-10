@@ -1,43 +1,13 @@
-# README
+# gatsby-starter-default
+The default Gatsby starter
 
-## Getting started
-Install nvm if it's not already installed:
-```sh
-brew install nvm
+For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
+
+Install this starter (assuming Gatsby is installed) by running from your CLI:
+```
+gatsby new gatsby-example-site
 ```
 
-Install v6.9.5 of nodejs:
-```sh
-nvm install 6.9.5
-```
+## Deploy
 
-Use that version and start your server:
-```sh
-nvm use
-./bin/server
-```
-
-That's it! The application is running on localhost:5000
-
-## Configuring AWS elastic beanstalk
-Before creating the elastic beanstalk instance, make sure that you've created an IAM user for the application, with only the necessary permissions. Generate access keys for that user and keep them handy, since you'll need them to create the instance.
-
-Once you have your user and access keys, run:
-```sh
-$ brew update
-$ brew install aws-elasticbeanstalk
-$ eb init
-```
-
-Follow the series of prompts, which will configure your instance and SSH.
-
-Run:
-`$ eb create eb create production --database.engine postgres --database.instance db.t2.micro --database.username pguser --envvars SECRET_KEY_BASE=`
-
-I found that I needed to explicitly assign environment variables in database.yml for the initial deploy, otherwise it failed because it couldn't connect to the postgres instance. After the initial deploy I was able to modify database.yml to once again use Rails secrets for those values.
-
-You might also need to set ENV variables in elastic beanstalk (configuration -> software configuration) - particularly the
-RAILS_MASTER_KEY.
-
-## Deploying the application
-`$ eb deploy production`
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)

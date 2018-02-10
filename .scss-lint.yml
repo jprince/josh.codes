@@ -1,6 +1,0 @@
-scss_files: "app/assets/stylesheets/*.scss"
-severity: error
-
-linters:
-  LeadingZero:
-    style: include_zero

@@ -1,7 +1,0 @@
-#!/bin/bash -i
-bundle install
-yarn install
-rails db:create
-rails db:migrate
-rails db:seed
-bundle exec foreman start -f Procfile.dev
