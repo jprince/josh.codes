@@ -23,3 +23,41 @@ header {
 
   a { color: $white; }
 }
+
+h1,
+h1 a {
+  color: $red;
+  font-size: 4.2rem;
+  font-weight: 700;
+  margin: 4.2rem 0 0;
+  text-transform: uppercase;
+}
+
+h2,
+h2 a {
+  color: $blue-dark;
+  font-family: $secondary-font;
+  font-size: 3.75rem;
+  font-weight: 400;
+  line-height: 3.6rem;
+  margin: 0 0 3rem;
+}
+
+h3,
+h3 a {
+  color: $purple-light;
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  line-height: 2rem;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+}
+
+h4,
+h4 a {
+  color: $blue-dark;
+  font-size: 2.28rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
