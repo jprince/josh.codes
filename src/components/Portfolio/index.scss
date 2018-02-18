@@ -1,0 +1,76 @@
+@import '../../common/variables';
+
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+.portfolio { margin-top: 3rem; }
+.slick-slider {
+  height: 590px;
+
+  .material-icons {
+    color: $orange;
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+
+    &.next {
+      font-size: 80px;
+      right: -8%;
+    }
+
+    &.prev {
+      font-size: 80px;
+      left: -8%;
+    }
+  }
+}
+
+.slick-list {
+  box-shadow: $image-box-shadow;
+  max-height: 590px;
+}
+
+.slick-dots li button:before {
+  font-size: 1rem;
+  padding-top: 0.6rem;
+}
+
+.slick-dots li,
+.slick-dots li.slick-active {
+  button:before {
+   color: $orange-dark;
+  }
+}
+
+.image-showcase-modal {
+  div:first-of-type {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.image-showcase {
+  margin: 2%;
+  outline: none;
+  text-align: center;
+
+  img {
+    border-radius: 8px;
+    box-shadow: $image-box-shadow;
+    cursor: zoom-out;
+  }
+}
+
+.project-gallery {
+  align-items: center;
+
+  img {
+    border-radius: 4px;
+    box-shadow: $image-box-shadow;
+    cursor: zoom-in;
+
+    &:hover {
+      opacity: 0.8;
+      transition: opacity .4s;
+    }
+  }
+}

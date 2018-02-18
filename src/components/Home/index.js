@@ -6,13 +6,13 @@ import Link from 'gatsby-link'
 
 import DetailModal from './DetailModal';
 
-import analytics from './arcadia-analytics-home.png'
-import kanburn from './kanburn-loading.gif'
-import kingsCorner from './kings-corner-entry.png'
-import ahpLogo from './ahp-logo.png'
-import arcadiaLogo from './arcadia-logo.png'
-import buLogo from './bu-logo.png'
-import skillsChart from './skills-chart.png'
+import analyticsPreview from '../Portfolio/images/arcadia-analytics/home.png'
+import kanburnPreview from '../Portfolio/images/kanburn/loading.gif'
+import kingsCornerPreview from '../Portfolio/images/kings-corner/entry.png'
+import ahpLogo from './images/ahp-logo.png'
+import arcadiaLogo from './images/arcadia-logo.png'
+import buLogo from './images/bu-logo.png'
+import skillsChart from './images/skills-chart.png'
 
 import './index.scss'
 
@@ -55,13 +55,13 @@ const Home = () => (
       <Link to="/portfolio">
         <Grid container spacing={24}>
           <Grid item xs={4}>
-            <img src={analytics} />
+            <img src={analyticsPreview} />
           </Grid>
           <Grid item xs={4}>
-            <img src={kanburn} />
+            <img src={kanburnPreview} />
           </Grid>
           <Grid item xs={4}>
-            <img src={kingsCorner} />
+            <img src={kingsCornerPreview} />
           </Grid>
         </Grid>
       </Link>
