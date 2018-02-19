@@ -16,10 +16,10 @@ const Footer = () => (
         &nbsp; 978.331.0801
       </Grid>
       <Grid item xs={2} className="right-align footer-social">
-        <a href="https://github.com/jprince" target="_blank">
+        <a href="https://github.com/jprince" target="_blank" rel="noopener">
           <img src={githubLogo} />
         </a>
-        <a href="https://linkedin.com/in/joshprince" target="_blank">
+        <a href="https://linkedin.com/in/joshprince" target="_blank" rel="noopener">
           <img src={linkedinLogo} />
         </a>
       </Grid>
