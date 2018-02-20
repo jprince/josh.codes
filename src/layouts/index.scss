@@ -13,7 +13,10 @@ body {
   margin: 0;
 }
 
-a { text-decoration: none; }
+a {
+  color: $grey-light;
+  text-decoration: none;
+}
 
 footer,
 header {
