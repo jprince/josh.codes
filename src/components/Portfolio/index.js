@@ -16,7 +16,7 @@ const CarouselArrow = (props) => (
   >
     {props.direction === 'next' ? 'navigate_next' : 'navigate_before'}
   </Icon>
-)
+);
 
 class Portfolio extends React.Component {
   constructor(props) {
@@ -68,7 +68,7 @@ class Portfolio extends React.Component {
       infinite: true,
       nextArrow: <CarouselArrow direction="next" />,
       prevArrow: <CarouselArrow direction="prev" />,
-    }
+    };
 
     return (
       <div className="portfolio">

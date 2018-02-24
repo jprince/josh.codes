@@ -187,6 +187,6 @@ const Home = () => (
       </Grid>
     </Grid>
   </Grid>
-)
+);
 
 export default Home

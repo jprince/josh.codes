@@ -36,15 +36,15 @@ class ContactForm extends React.Component {
 
   handleEmailChange = (event) => {
     this.setState({ email: event.target.value});
-  }
+  };
 
   handleFullNameChange = (event) => {
     this.setState({ fullName: event.target.value});
-  }
+  };
 
   handleMessageChange = (event) => {
     this.setState({ message: event.target.value});
-  }
+  };
 
   render() {
     return (

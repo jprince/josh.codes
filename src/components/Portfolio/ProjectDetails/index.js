@@ -12,13 +12,13 @@ const baseState = {
 
 class ProjectDetails extends React.Component {
   constructor(props) {
-    super(props)
-    this.state = baseState
+    super(props);
+    this.state = baseState;
   }
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.selectedProject !== this.state.selectedProject) {
-      this.setState(baseState)
+      this.setState(baseState);
     }
   }
 

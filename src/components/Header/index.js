@@ -8,6 +8,6 @@ const Header = () => (
       {<span className="font-weight-600">Josh Prince</span>} | Design & Development
     </Link>
   </header>
-)
+);
 
 export default Header

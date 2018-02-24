@@ -58,6 +58,6 @@ class TemplateWrapper extends React.Component {
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func,
-}
+};
 
 export default TemplateWrapper

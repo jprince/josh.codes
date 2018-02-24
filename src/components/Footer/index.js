@@ -25,6 +25,6 @@ const Footer = () => (
       </Grid>
     </Grid>
   </footer>
-)
+);
 
 export default Footer
