@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import theme from '../common/theme'
 
-import ContactButton from '../components/ContactButton'
+import ContactForm from '../components/ContactForm'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import './index.scss'
@@ -48,7 +48,7 @@ class TemplateWrapper extends React.Component {
           </MuiThemeProvider>
         </div>
         <MuiThemeProvider theme={theme}>
-          <ContactButton />
+          <ContactForm />
         </MuiThemeProvider>
         <Footer />
       </div>

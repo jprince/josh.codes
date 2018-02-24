@@ -15,7 +15,7 @@ import Tooltip from 'material-ui/Tooltip';
 
 import './index.scss'
 
-class ContactButton extends React.Component {
+class ContactForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -139,7 +139,7 @@ class ContactButton extends React.Component {
               <Button onClick={this.handleClose}>Cancel</Button>
             </DialogActions>
             <input type="hidden" name="_subject" value="jprince.codes | New contact form" />
-            <input type="hidden" name="_next" value={window.location.href} />
+            <input type="hidden" name="_next" value={typeof window !== 'undefined' && window.location.href} />
           </form>
         </Dialog>
       </div>
@@ -147,4 +147,4 @@ class ContactButton extends React.Component {
   }
 }
 
-export default ContactButton
+export default ContactForm
