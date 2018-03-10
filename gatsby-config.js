@@ -1,12 +1,9 @@
 module.exports = {
-  siteMetadata: {
-    title: 'Gatsby Default Starter',
-  },
   plugins: [
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
-        logo: "./src/favicon.png",
+        logo: `./src/favicon.png`,
         injectHTML: true,
         icons: {
           android: true,
@@ -21,7 +18,24 @@ module.exports = {
         }
       }
     },
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass'
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data/`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `img`,
+        path: `${__dirname}/src/img/`
+      }
+    },
+    `gatsby-transformer-json`,
+    `gatsby-transformer-sharp`
   ],
 };

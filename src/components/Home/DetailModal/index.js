@@ -21,20 +21,19 @@ class DetailModal extends React.Component {
   };
 
   render() {
-    const modalDescription = this.props.modalDescription ? (
+    const modalDescription = this.props.modalDescription && (
       <div className="modal-description">
         {this.props.modalDescription}
       </div>
-    ) : null;
+    );
 
     return (
-      <div className={this.props.class}>
-        <img src={this.props.logo} />
+      <div className="detail-modal">
         <Button variant="fab" aria-label="open" onClick={this.handleOpen}>
           <Icon>add_icon</Icon>
         </Button>
         <Modal open={this.state.modalOpen} onClose={this.handleClose}>
-          <div className={`modal ${this.props.class}-modal`}>
+          <div className={`modal ${this.props.class && this.props.class}`}>
             <div className="modal-content">
               <h4>{this.props.modalTitle}</h4>
               {modalDescription}

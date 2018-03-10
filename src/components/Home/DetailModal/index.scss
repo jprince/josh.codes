@@ -1,4 +1,14 @@
-@import '../../../common/variables';
+@import '~@src/common/variables';
+
+.detail-modal {
+  display: inline-block;
+
+  button {
+    height: 40px;
+    margin-left: 0.5rem;
+    width: 40px;
+  }
+}
 
 .modal {
   background-color: $white;
@@ -10,9 +20,6 @@
   text-align: center;
   transform: scaleX(1);
   width: 80%;
-
-  &.education-bu-modal { height: 30%; }
-  &.skills-chart-modal { height: 50%; }
 }
 
 .modal-content {
@@ -61,9 +68,4 @@ hr { margin: 2rem 0; }
     float: right;
     font-family: $default-font;
   }
-}
-
-.education-bu-modal .role-description,
-.skills-chart-modal .modal-body {
-  text-align: center;
 }

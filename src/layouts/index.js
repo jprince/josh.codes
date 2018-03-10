@@ -3,11 +3,11 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import theme from '../common/theme'
+import theme from '@src/common/theme'
 
-import ContactForm from '../components/ContactForm'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
+import ContactForm from '@src/components/ContactForm'
+import Footer from '@src/components/Footer'
+import Header from '@src/components/Header'
 import './index.scss'
 
 class TemplateWrapper extends React.Component {
@@ -16,7 +16,7 @@ class TemplateWrapper extends React.Component {
   }
 
   render() {
-    const { location, children } = this.props;
+    const { location, children, data } = this.props;
 
     return (
       <div>
@@ -50,7 +50,7 @@ class TemplateWrapper extends React.Component {
         <MuiThemeProvider theme={theme}>
           <ContactForm />
         </MuiThemeProvider>
-        <Footer />
+        <Footer images={data} />
       </div>
     )
   }
@@ -61,3 +61,18 @@ TemplateWrapper.propTypes = {
 };
 
 export default TemplateWrapper
+
+export const query = graphql`
+  query FooterImgQuery {
+    githubLogo: imageSharp(id: { regex: "/github-logo/" }) {
+      resolutions(width: 32, height: 32) {
+        ...GatsbyImageSharpResolutions
+      }
+    }
+    linkedinLogo: imageSharp(id: { regex: "/linkedin-logo/" }) {
+      resolutions(width: 45, height: 34) {
+        ...GatsbyImageSharpResolutions
+      }
+    }
+  }
+`;

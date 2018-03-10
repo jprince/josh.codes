@@ -1,68 +1,43 @@
-@import '../../common/variables';
-
-@import '~slick-carousel/slick/slick.css';
-@import '~slick-carousel/slick/slick-theme.css';
+@import '~@src/common/variables';
 
 .portfolio { margin-top: 3rem; }
-.slick-slider {
-  height: 590px;
 
-  .material-icons {
-    color: $orange;
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-
-    &.next {
-      font-size: 80px;
-      right: -8%;
-    }
-
-    &.prev {
-      font-size: 80px;
-      left: -8%;
-    }
-  }
-}
-
-.slick-list {
-  box-shadow: $image-box-shadow;
-  max-height: 590px;
-}
-
-.slick-dots li button:before {
-  font-size: 1rem;
-  padding-top: 0.6rem;
-}
-
-.slick-dots li,
-.slick-dots li.slick-active {
-  button:before {
-   color: $orange-dark;
-  }
-}
-
-.image-showcase-modal {
-  div:first-of-type {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
+.image-showcase-modal > div:first-of-type {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .image-showcase {
-  margin: 2%;
+  height: 100%;
+  margin: 0 auto;
   outline: none;
-  text-align: center;
-  width: 100%;
+
+  .gatsby-image-outer-wrapper {
+    display: block;
+    height: 97%;
+  }
+
+  .gatsby-image-wrapper {
+    height: 100%;
+    div { display: none; }
+  }
 
   img {
     border-radius: 8px;
-    box-shadow: $image-box-shadow;
     cursor: zoom-out;
+    max-height: 98%;
+    max-width: 98%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
 .project-gallery {
   align-items: center;
+
+  .gatsby-image-outer-wrapper, .gatsby-image-wrapper {
+    border-radius: 4px;
+  }
 
   img {
     border-radius: 4px;
@@ -70,8 +45,10 @@
     cursor: zoom-in;
 
     &:hover {
-      opacity: 0.8;
-      transition: opacity .4s;
+      opacity: 0.8 !important;
+      transition: opacity 0.4s !important;
     }
+
+    &.gif { width: 100%; }
   }
 }

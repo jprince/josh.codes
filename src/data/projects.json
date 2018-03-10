@@ -1,0 +1,191 @@
+[
+  {
+    "name": "Arcadia Analytics",
+    "problem": "A patient's healthcare information is typically fragmented across several different systems. Primary care physicians, hospitals, and specialists each have their own record management system and these systems rarely exchange data with one another. This makes it difficult for healthcare providers to have a comprehensive picture of a patient and their overall wellness.",
+    "solution": "Arcadia Analytics aggregates data from these disparate source systems and provides clients with a single system of record. The tool is used for measuring quality of care provided, prioritizing patient outreach, coordinating care, and analyzing utilization and cost of services.",
+    "technology": "Ruby on Rails, AngularJS, Redis, D3, Docker",
+    "galleryImage": "../img/portfolio/arcadia-analytics/home.png",
+    "images": [
+      {
+        "fileName": "../img/portfolio/arcadia-analytics/home.png",
+        "title": "Arcadia Analytics homepage"
+      },
+      {
+        "fileName": "../img/portfolio/arcadia-analytics/patient-search.gif",
+        "title": "Demo of Arcadia Analytics patient search"
+      },
+      {
+        "fileName": "../img/portfolio/arcadia-analytics/initiative.png",
+        "title": "Arcadia Analytics initiative page"
+      },
+      {
+        "fileName": "../img/portfolio/arcadia-analytics/medical-expense-management.png",
+        "title": "Arcadia Analytics medical expense management dashboard"
+      },
+      {
+        "fileName": "../img/portfolio/arcadia-analytics/group-cost-analyzer.gif",
+        "title": "Demo of Arcadia Analytics group cost analyzer"
+      },
+      {
+        "fileName": "../img/portfolio/arcadia-analytics/geography-analysis.png",
+        "title": "Arcadia Analytics geography analysis card"
+      },
+      {
+        "fileName": "../img/portfolio/arcadia-analytics/risk-opportunities.gif",
+        "title": "Demo of Arcadia Analytics risk opportunities chart"
+      },
+      {
+        "fileName": "../img/portfolio/arcadia-analytics/patient-registry.gif",
+        "title": "Demo of Arcadia Analytics patient registry report"
+      },
+      {
+        "fileName": "../img/portfolio/arcadia-analytics/bulk-outreach.png",
+        "title": "Arcadia Analytics bulk outreach interface"
+      },
+      {
+        "fileName": "../img/portfolio/arcadia-analytics/patient-summary-chart.gif",
+        "title": "Demo of Arcadia Analytics longitudinal patient summary"
+      },
+      {
+        "fileName": "../img/portfolio/arcadia-analytics/patient-summary-tasks.png",
+        "title": "Arcadia Analytics care management task pane"
+      }
+    ]
+  },
+  {
+    "name": "Kanburn",
+    "problem": "Despite using an agile software development methodology for planning and executing releases, I was often asked by stakeholders (product managers, implementation teams, account managers, etc.) to provide an estimate as to when a particular release would be completed. Determining this was done manually and often had to be recalculated several times throughout a release.",
+    "solution": "Kanburn provides a burndown for projects that utilize a Kanban or continuous flow planning process. It takes inputs for team size, velocity, and PTO and uses them, along with estimates on open tickets pulled from the JIRA API, to provide a real-time estimate of the release's completion date. Though this was developed as a side-project it was adopted by all three of Arcadia's development teams",
+    "technology": "Meteor",
+    "galleryImage": "../img/portfolio/kanburn/pane-1.png",
+    "images": [
+      {
+        "fileName": "../img/portfolio/kanburn/pane-1.png",
+        "title": "Kanburn summary pane"
+      },
+      {
+        "fileName": "../img/portfolio/kanburn/pane-2.png",
+        "title": "Kanburn defects pane"
+      },
+      {
+        "fileName": "../img/portfolio/kanburn/pane-3.png",
+        "title": "Kanburn tickets without estimates pane"
+      },
+      {
+        "fileName": "../img/portfolio/kanburn/loading.gif",
+        "title": "Kanburn loading overlay"
+      },
+      {
+        "fileName": "../img/portfolio/kanburn/admin-1.png",
+        "title": "Kanburn release configuration"
+      },
+      {
+        "fileName": "../img/portfolio/kanburn/admin-2.png",
+        "title": "Kanburn team configuration"
+      }
+    ]
+  },
+  {
+    "name": "Sleepers and Keepers",
+    "problem": "For the past 16 years I've run fantasy football and baseball leagues with friends and family. Each year we look forward to getting together for our live draft. While each of the major fantasy sports websites offers live draft software, none of them have adequately met our needs, so I built my own",
+    "solution": "Sleepers and Keepers allows a Commissioner to register a league and configure teams, draft order, keepers, and traded draft picks. During the draft each team owner logs into the application and participates in the draft in real-time.",
+    "technology": "Ruby on Rails, ActionCable, React",
+    "galleryImage": "../img/portfolio/sleepers-and-keepers/league-home.png",
+    "images": [
+      {
+        "fileName": "../img/portfolio/sleepers-and-keepers/league-home.png",
+        "title": "Sleepers and Keepers league homepage"
+      },
+      {
+        "fileName": "../img/portfolio/sleepers-and-keepers/teams.png",
+        "title": "Sleepers and Keepers teams page"
+      },
+      {
+        "fileName": "../img/portfolio/sleepers-and-keepers/new-league.png",
+        "title": "Sleepers and Keepers new league page"
+      },
+      {
+        "fileName": "../img/portfolio/sleepers-and-keepers/draft-order.png",
+        "title": "Sleepers and Keepers draft order configuration page"
+      },
+      {
+        "fileName": "../img/portfolio/sleepers-and-keepers/trade-picks.png",
+        "title": "Sleepers and Keepers trade draft pick page"
+      },
+      {
+        "fileName": "../img/portfolio/sleepers-and-keepers/keepers.png",
+        "title": "Sleepers and Keepers keeper entry page"
+      },
+      {
+        "fileName": "../img/portfolio/sleepers-and-keepers/draft-results.gif",
+        "title": "Demo of Sleepers and Keepers draft results"
+      }
+    ]
+  },
+  {
+    "name": "Kings Corner Barbershop",
+    "problem": "When my brother decided to open his own high-end barbershop he approached me for help with his branding and website. His requirements were something that reflects the hip character of the shop and allows him to make frequent updates.",
+    "solution": "With the requirement that he be able to make edits to his website (for barber profiles and gallery photos) I knew that a CMS would be a better choice than something written from scratch. Wix provided us with nice template options without restricting our ability to customize it for his shop. He's since opened a second location and the CMS made it easy to extend the website accordingly.",
+    "technology": "Wix.com CMS",
+    "galleryImage": "../img/portfolio/kings-corner/entry.png",
+    "images": [
+      {
+        "fileName": "../img/portfolio/kings-corner/entry.png",
+        "title": "Kings Corner Barbershop location selection page"
+      },
+      {
+        "fileName": "../img/portfolio/kings-corner/splash.png",
+        "title": "Kings Corner Barbershop splash pane"
+      },
+      {
+        "fileName": "../img/portfolio/kings-corner/tagline.png",
+        "title": "Kings Corner Barbershop tagline pane"
+      },
+      {
+        "fileName": "../img/portfolio/kings-corner/services.png",
+        "title": "Kings Corner Barbershop services pane"
+      },
+      {
+        "fileName": "../img/portfolio/kings-corner/gallery.png",
+        "title": "Kings Corner Barbershop gallery pane"
+      },
+      {
+        "fileName": "../img/portfolio/kings-corner/contact.png",
+        "title": "Kings Corner Barbershop contact pane"
+      },
+      {
+        "fileName": "../img/portfolio/kings-corner/map.png",
+        "title": "Kings Corner Barbershop google map pane"
+      },
+      {
+        "fileName": "../img/portfolio/kings-corner/logo.jpg",
+        "title": "Kings Corner Barbershop logo"
+      }
+    ]
+  },
+  {
+    "name": "My Wedding Website",
+    "problem": "My fiancé and I wanted a simple wedding website that would allow us to share important logistical details with our guests prior to sending out invitations.",
+    "solution": "Given the straightforwardness of our requirements, and the desire to be able to get something stood up with minimal effort, I decided that working off of a CMS template made more sense than building something from scratch. Ultimately that meant that the majority of the effort was design-related, which I had a lot of fun with.",
+    "technology": "Squarespace.com CMS",
+    "galleryImage": "../img/portfolio/wedding-website/home.png",
+    "images": [
+      {
+        "fileName": "../img/portfolio/wedding-website/home.png",
+        "title": "Wedding website homepage"
+      },
+      {
+        "fileName": "../img/portfolio/wedding-website/schedule.png",
+        "title": "Wedding website schedule page"
+      },
+      {
+        "fileName": "../img/portfolio/wedding-website/accommodations.png",
+        "title": "Wedding website accommodations page"
+      },
+      {
+        "fileName": "../img/portfolio/wedding-website/registry.png",
+        "title": "Wedding website registry page"
+      }
+    ]
+  }
+]

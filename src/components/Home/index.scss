@@ -1,59 +1,92 @@
-@import '../../common/variables';
+@import '~@src/common/variables';
 
-.home { text-align: center; }
+.home {
+  text-align: center;
 
-.maintainability-card,
-.scalability-card,
-.testability-card {
-  background-color: $grey-lighter !important;
-  color: $blue-dark;
-  font-size: 1.5rem;
-  font-weight: 500;
-  padding: 1rem;
-  text-transform: uppercase;
-}
-
-.maintainability-card .material-icons {
-  font-size: 3.7rem;
-  margin-bottom: 2.63rem;
-  margin-top: 0.4rem;
-}
-
-.scalability-card,
-.testability-card {
-  .material-icons {
-    font-size: 5rem;
-    margin-bottom: 1.75rem;
+  .maintainability-card,
+  .scalability-card,
+  .testability-card {
+    background-color: $grey-lighter !important;
+    color: $blue-dark;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1rem;
+    text-transform: uppercase;
   }
-}
 
-img {
-  max-height: 100%;
-  max-width: 100%;
-}
-
-.education,
-.portfolio,
-.professional-experience,
-.technical-skills {
-  margin: 3rem 0 0 !important;
-
-  button {
-    height: 40px;
-    margin-left: 0.5rem;
-    width: 40px;
+  .maintainability-card .material-icons {
+    font-size: 3.7rem;
+    margin-bottom: 2.63rem;
+    margin-top: 0.4rem;
   }
+
+  .scalability-card,
+  .testability-card {
+    .material-icons {
+      font-size: 5rem;
+      margin-bottom: 1.75rem;
+    }
+  }
+
+  .education,
+  .portfolio,
+  .professional-experience,
+  .technical-skills {
+    margin: 3rem 0 0 !important;
+  }
+
+  .education,
+  .professional-experience {
+    .gatsby-image-outer-wrapper {
+      display: inline-block;
+    }
+  }
+
+  .portfolio {
+    div { align-items: center; }
+
+    .gatsby-image-wrapper,
+    img {
+      border-radius: 3px;
+      box-shadow: $image-box-shadow;
+    }
+
+    .gif {
+      max-width: 309px;
+      width: 100%;
+    }
+  }
+
+  .experience-ahp {
+    button { margin-left: -2.2rem; }
+
+    .gatsby-image-outer-wrapper { padding-top: 3.4rem; }
+  }
+
+  .technical-skills {
+    .button-wrapper {
+      position: relative;
+
+      button {
+        bottom: 1rem;
+        left: -3rem;
+        position: absolute;
+      }
+    }
+
+    .gatsby-image-outer-wrapper {
+      margin: auto;
+      max-width: 835px;
+    }
+  }
+
+  .education-bu .gatsby-image-outer-wrapper { padding-left: 3.3rem; }
 }
 
-.experience-ahp { padding: 2.7rem 0 0 2rem; }
-.education-bu { padding: 0.5rem 0 0 3.8rem; }
-.skills-chart img { max-width: 87%; }
+.education-bu-modal { height: 14rem; }
+.skills-chart-modal { height: 25rem; }
 
-.portfolio a > div {
-  align-items: center;
-
-  img {
-    border-radius: 3px;
-    box-shadow: $image-box-shadow;
-  }
+.education-bu-modal .role-description,
+.skills-chart-modal .modal-body {
+  text-align: center;
 }

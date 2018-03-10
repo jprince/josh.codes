@@ -1,4 +1,4 @@
-@import '../../../common/variables';
+@import '~@src/common/variables';
 
 $grey-border: #ddd;
 
@@ -20,34 +20,34 @@ $grey-border: #ddd;
   border-left: 1px solid $grey-border;
   border-right: 1px solid $grey-border;
   border-top: 1px solid $grey-border;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.2)
-}
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.2);
 
-.problem-panel, .solution-panel, .technology-panel {
-  box-shadow: none !important;
+  .header-label { padding-top: 0.15rem; }
 
-  &::before { display: none; }
-}
+  .active {
+    margin: 0 !important;
 
-.problem-panel .indicator-icon { color: $icon-red; }
-.solution-panel .indicator-icon { color: $icon-green; }
-.technology-panel .indicator-icon { color: $grey; }
+    .header-label { font-weight: 600; }
+  }
 
-.expansion-panel-header {
-  border-bottom: 1px solid $grey-border !important;
-  height: 3rem !important;
-  min-height: 1rem !important;
-}
+  .problem-panel, .solution-panel, .technology-panel {
+    box-shadow: none !important;
 
-.header-label {
-  padding-top: 0.15rem;
-}
+    &::before { display: none; }
+  }
 
-.active .header-label {
-  font-weight: 600;
-}
+  .problem-panel .indicator-icon { color: $icon-red; }
+  .solution-panel .indicator-icon { color: $icon-green; }
+  .technology-panel .indicator-icon { color: $grey; }
 
-.expansion-panel-details {
-  border-bottom: 1px solid $grey-border;
-  padding: 2rem !important;
+  .expansion-panel-header {
+    border-bottom: 1px solid $grey-border !important;
+    height: 3rem !important;
+    min-height: 1rem !important;
+  }
+
+  .expansion-panel-details {
+    border-bottom: 1px solid $grey-border;
+    padding: 2rem !important;
+  }
 }
