@@ -6,10 +6,11 @@
   .maintainability-card,
   .scalability-card,
   .testability-card {
-    background-color: $grey-lighter !important;
+    background-color: $grey-lighter;
     color: $blue-dark;
     font-size: 1.5rem;
     font-weight: 500;
+    overflow: hidden;
     padding: 1rem;
     text-transform: uppercase;
   }
@@ -32,7 +33,7 @@
   .portfolio,
   .professional-experience,
   .technical-skills {
-    margin: 3rem 0 0 !important;
+    margin: 3rem 0 0;
   }
 
   .education,

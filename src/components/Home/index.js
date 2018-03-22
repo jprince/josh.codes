@@ -184,7 +184,7 @@ class Home extends React.Component {
                     D3.js<br/>
                     Docker<br/>
                     Redis<br/>
-                    GraphQL*
+                    GraphQL
                   </p>
                 </Grid>
               </Grid>

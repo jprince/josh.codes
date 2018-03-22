@@ -58,6 +58,7 @@ class ContactForm extends React.Component {
             aria-label="contact"
             className="contact-button"
             onClick={this.handleOpen}
+            style={{ position: 'fixed' }}
             variant="fab"
           >
             <Icon>chat</Icon>

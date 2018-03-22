@@ -21,7 +21,7 @@ class Footer extends React.Component {
             &nbsp; <a href="mailto:josh@jprince.codes">josh@jprince.codes</a> &nbsp; |
             &nbsp; 978.331.0801
           </Grid>
-          <Grid item xs={2} className="right-align footer-social">
+          <Grid item xs={2} className="right-align footer-social" style={{ paddingBottom: '1.3rem', paddingTop: '1.3rem' }}>
             <a href="https://github.com/jprince" target="_blank" rel="noopener">
               <Img resolutions={images.githubLogo.resolutions} />
             </a>
