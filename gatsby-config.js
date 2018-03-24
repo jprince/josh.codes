@@ -23,7 +23,7 @@ module.exports = {
       options: {
         author: 'Josh Prince',
         name: "jprince.codes",
-        short_name: "jprince.codes",
+        short_name: "jprince",
         start_url: "/",
         background_color: "#36b0d8",
         theme_color: "#36b0d8",
