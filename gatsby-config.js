@@ -60,6 +60,7 @@ module.exports = {
       }
     },
     `gatsby-transformer-json`,
-    `gatsby-transformer-sharp`
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-netlify` // needs to be specified last
   ],
 };
