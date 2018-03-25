@@ -70,7 +70,7 @@ export const query = graphql`
       }
     }
     linkedinLogo: imageSharp(id: { regex: "/linkedin-logo/" }) {
-      resolutions(width: 45, height: 34) {
+      resolutions(width: 34, height: 34) {
         ...GatsbyImageSharpResolutions
       }
     }
