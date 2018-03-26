@@ -26,13 +26,6 @@ class TemplateWrapper extends React.Component {
             { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
             { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Raleway:400,500,600,700|Montserrat:300' },
           ]}
-          script={[
-            { aync: true, src: 'https://www.googletagmanager.com/gtag/js?id=UA-107487939-1' },
-            {
-              type: 'text/javascript',
-              innerHTML: 'window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag(\'js\', new Date());gtag(\'config\', \'UA-107487939-1\');'
-            }
-          ]}
         />
         <Header />
         <div

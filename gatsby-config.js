@@ -1,6 +1,13 @@
 module.exports = {
   plugins: [
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-107487939-1",
+        head: false,
+      }
+    },
+    {
       resolve: `gatsby-plugin-favicon`,
       options: {
         logo: `./src/favicon.png`,
