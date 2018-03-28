@@ -19,7 +19,7 @@ export const query = graphql`
           technology
           galleryImage {
             childImageSharp {
-              sizes(maxWidth: 960) {
+              sizes(maxWidth: 960, quality: 100) {
                 ...GatsbyImageSharpSizes
               }
             }
