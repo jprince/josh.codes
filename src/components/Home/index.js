@@ -174,7 +174,6 @@ class Home extends React.Component {
                     AngularJS (1.x)<br/>
                     Angular (2+)<br/>
                     React<br/>
-                    Meteor<br/>
                   </p>
                 </Grid>
                 <Grid item xs={4}>
