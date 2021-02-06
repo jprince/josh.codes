@@ -4,9 +4,6 @@ import Helmet from 'react-helmet'
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import theme from '@src/common/theme'
-
-import ContactForm from '@src/components/ContactForm'
-import Footer from '@src/components/Footer'
 import Header from '@src/components/Header'
 import './index.scss'
 
@@ -16,8 +13,6 @@ class TemplateWrapper extends React.Component {
   }
 
   render() {
-    const { location, children, data } = this.props;
-
     return (
       <div>
         <Helmet
@@ -31,19 +26,17 @@ class TemplateWrapper extends React.Component {
         <div
           style={{
             margin: '0 auto',
-            maxWidth: 960,
-            padding: '0px 1.0875rem 1.45rem',
-            paddingTop: 0,
+            padding: '2rem 1.0875rem 1.45rem',
           }}
         >
           <MuiThemeProvider theme={theme}>
-            {children()}
+            <h4>
+              <a href="https://linkedin.com/in/joshprince" target="_blank" rel="noopener">
+                LinkedIn
+              </a>
+            </h4>
           </MuiThemeProvider>
         </div>
-        <MuiThemeProvider theme={theme}>
-          <ContactForm />
-        </MuiThemeProvider>
-        <Footer images={data} />
       </div>
     )
   }
